@@ -94,6 +94,7 @@ void setup()
 {
   Serial.begin(115200);
   ThingSpeak.begin(client);
+  WiFi.mode(WIFI_STA);
   dht.begin();
   pinMode(out, INPUT);
 }
